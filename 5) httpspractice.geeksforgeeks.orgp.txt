@@ -1,0 +1,12 @@
+5) https://practice.geeksforgeeks.org/problems/average4856/1?page=3&difficulty[]=-2&sortBy=submissions
+class Solution {
+    fascinating(N){
+ let res = ""+N+(N*2)+(N*3);
+        let set1 = new Set(res.split(''));
+        if(set1.size !== 9 || res.length !== 9 || res.includes('0')){
+           return false;
+        }
+       
+        return true;
+    }
+}
